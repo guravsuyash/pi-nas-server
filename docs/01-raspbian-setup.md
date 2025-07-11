@@ -21,9 +21,10 @@ SSH into the Pi using the IP address assigned (from your router or Bonjour `.loc
 You would get this IP address from IP scanner tools or your router setup page 
 
 Commands:
-
-`hostnamectl set-hostname openmediavault # Change Hostname to openmediavault` 
-`sudo apt update && sudo apt upgrade -y # Downloads the latest package lists, including versions and dependencies`
+```bash
+hostnamectl set-hostname openmediavault # Change Hostname to openmediavault
+sudo apt update && sudo apt upgrade -y # Downloads the latest package lists, including versions and dependencies
+```
 
 ## 🐳 Installing Docker (Official Method)
 ```bash
