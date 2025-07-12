@@ -27,4 +27,3 @@ echo "🔁 Please reboot the system to apply changes:"
 echo ""
 echo "    sudo reboot"
 echo ""
-

@@ -2,7 +2,7 @@
 
 In this step, we configure an **Apache web server** running in Docker to act as a **reverse proxy** for a **PHP 7.4 FPM container**. This allows for a production-like setup with clean separation of web serving and PHP processing.
 
-> 📁 The `docker-compose.yml` and `Dockerfile` for this setup are already present in this folder.
+> 📁 The `docker-compose-apache.yml` and `Dockerfile` for this setup are already present in this folder.
 
 ---
 
@@ -27,7 +27,7 @@ cd /path/to/project_directory
 ```
 
 This directory should contain:
-`docker-compose.yml`
+`docker-compose-apache.yml`
 
 `/path/to/` folder (Dockerfile and config)
 
@@ -65,7 +65,7 @@ Make sure the Apache Dockerfile or virtual host config includes:
 </VirtualHost>
 ```
 
-- `php` is the name of your PHP container as defined in `docker-compose.yml`
+- `php` is the name of your PHP container as defined in `docker-compose-apache.yml`
 - Apache should have `proxy` and `proxy_fcgi` modules enabled (usually already done in Docker base image)
 
 ## 📂 Directory Structure
@@ -74,7 +74,7 @@ Your project folder may look like this:
 
 ```swift
 </path/to/your-project>
-├── docker-compose.yml
+├── docker-compose-apache.yml
 ├── apache/
 │   ├── Dockerfile
 │   └── apache.conf
