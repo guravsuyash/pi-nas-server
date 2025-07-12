@@ -44,7 +44,6 @@ sudo nano docker-compose-plex.yml
 Paste the following configuration and replace all placeholder values:
 
 ```yaml
-version: '2'
 services:
   plex:
     container_name: plex
@@ -70,6 +69,8 @@ services:
       - <path/to/plex/database>:/config
       - <path/to/transcode/temp>:/transcode
       - <path/to/media>:/data
+    devices:
+      - /dev/dri:/dev/dri  # Enables GPU hardware acceleration
 ```
 
 ### 🔁 Replace the following placeholders:
