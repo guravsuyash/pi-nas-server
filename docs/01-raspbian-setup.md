@@ -50,3 +50,4 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 ```
 ---
 
+Or you can simply install docker using [`install-docker.sh`](./scripts/install-docker.sh)
