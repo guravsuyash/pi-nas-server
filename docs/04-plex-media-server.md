@@ -110,7 +110,5 @@ Visit Plex in your browser:
 ## ✅ Outcome
 
 - Plex Media Server is running in a Docker container.
-    
 - It's accessible from any device on your network.
-    
 - Your media is now organized and streamable via the Plex interface.
