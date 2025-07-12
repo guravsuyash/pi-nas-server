@@ -61,6 +61,9 @@ Default credentials:
 
 **✅ Outcome**
 - OpenMediaVault is installed and accessible via web UI
+
 - A test USB drive is mounted as ext4 storage
+
 - Shared folders are configured and accessible via FTP, NFS, and SMB
+
 - A user is created for upload/download access
