@@ -21,11 +21,11 @@ Before proceeding, make sure you have:
 
 - A freshly formatted drive (or format it using `sudo mkfs.ext4 /dev/sda1`)
 - Identified the correct device name using:
-  ```bash
+- SSH or terminal access to your Raspberry Pi
+
+```bash
   lsblk
 ```
-
-- SSH or terminal access to your Raspberry Pi
 
 ## ⚙️ Bash Script – `mount-storage.sh`
 
