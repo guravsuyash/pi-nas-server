@@ -1,0 +1,97 @@
+services:
+  apache:
+    image: httpd:2.4
+    container_name: apache
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - </path/to/default.conf>:/usr/local/apache2/conf/httpd.conf
+      - </path/to/ssl>:/usr/local/apache2/conf/ssl
+      - </path/to/web>:/var/www/html
+    depends_on:
+      - php
+    networks:
+      - backend
+
+  php:
+    build:
+      context: .
+      dockerfile: 
+    container_name: php
+    healthcheck:
+      test: ["CMD", "php-fpm", "-t"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    volumes:
+      - </path/to/web>:/var/www/html
+    networks:
+      - backend
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpass
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - backend
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "8080:80"
+    networks:
+      - backend
+
+  mailserver:
+    image: mailserver/docker-mailserver:latest
+    container_name: mailserver
+    hostname: mail
+    domainname: example.com
+    ports:
+      - "25:25"
+      - "143:143"
+      - "587:587"
+      - "993:993"
+    volumes:
+      - maildata:/var/mail
+      - mailstate:/var/mail-state
+      - </path/to/config/mail>:/tmp/docker-mailserver/
+    environment:
+      ENABLE_SPAMASSASSIN: 0
+      ENABLE_CLAMAV: 0
+      ENABLE_FAIL2BAN: 0
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - backend
+
+  roundcube:
+    image: roundcube/roundcubemail:latest
+    container_name: roundcube
+    environment:
+      ROUNDCUBEMAIL_DEFAULT_HOST: mail
+    ports:
+      - "8081:80"
+    depends_on:
+      - mailserver
+    networks:
+      - backend
+
+volumes:
+  mysql_data:
+  maildata:
+  mailstate:
+
+networks:
+  backend:

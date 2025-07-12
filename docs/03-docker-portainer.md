@@ -43,6 +43,7 @@ docker run -d \
   portainer/portainer-ce:latest
 ```
 
+Or you can use a [portainer-compose.yml](../docker/compose/portainer-compose.yml) file to run it 
 ## 🌐 Access Portainer Web UI
 
 Get your Raspberry Pi's local IP:
