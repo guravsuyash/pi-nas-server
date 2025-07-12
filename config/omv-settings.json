@@ -1,0 +1,37 @@
+{
+  "hostname": "openmediavault",
+  "network": {
+    "wifi_enabled": true,
+    "ip_address": "192.168.1.101",
+    "interface": "wlan0"
+  },
+  "users": [
+    {
+      "username": "mediauser",
+      "permissions": ["read", "write"],
+      "groups": ["users"]
+    }
+  ],
+  "shared_folders": [
+    {
+      "name": "MediaStorage",
+      "device": "/dev/sda1",
+      "mount_point": "/srv/dev-disk-by-label-media",
+      "_comment": "The dev-disk-by-label-media changes each time on reboot",
+      "filesystem": "ext4"
+    }
+  ],
+  "services": {
+    "ftp": true,
+    "nfs": true,
+    "smb_cifs": true
+  },
+  "docker": {
+    "installed": true,
+    "portainer": {
+      "enabled": true,
+      "url": "https://192.168.1.101:9443"
+    }
+  },
+  "notes": "USB drive used only for testing. Not recommended for production."
+}
