@@ -27,7 +27,7 @@ After installation, the default WiFi connection was disrupted on the Raspberry P
 ## 🌐 Accessing OMV Web UI
 Once IP is known, open in a browser:
 
-http://<raspberry-pi-ip></raspberry-pi-ip>
+`http://<raspberry-pi-ip>`
 
 Default credentials:
 - **Username**: admin
