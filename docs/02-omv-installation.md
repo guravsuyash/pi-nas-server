@@ -22,7 +22,7 @@ After installation, the default WiFi connection was disrupted on the Raspberry P
 - Accessed the OMV Web UI from the displayed IP.
 - Reconfigured WiFi connection manually via the GUI.
 
-⚠️ This setup is for testing purposes only and not intended for production. Ethernet is recommended for reliability in real-world use.
+> ⚠️ This setup is for testing purposes only and not intended for production. Ethernet is recommended for reliability in real-world use.
 
 ## 🌐 Accessing OMV Web UI
 Once IP is known, open in a browser:

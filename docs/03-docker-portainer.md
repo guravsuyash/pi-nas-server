@@ -55,7 +55,7 @@ Access the Portainer UI from a browser:
 
 `https://<your-pi-ip>:9443`
 
-⚠️ Portainer uses HTTPS on port 9443 by default. You might get a browser warning about the self-signed certificate — you can safely proceed.
+> ⚠️ Portainer uses HTTPS on port 9443 by default. You might get a browser warning about the self-signed certificate — you can safely proceed.
 
 ## 👤 Initial Setup
 
