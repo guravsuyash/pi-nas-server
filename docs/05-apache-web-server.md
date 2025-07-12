@@ -10,9 +10,9 @@ In this step, we configure an **Apache web server** running in Docker to act as 
 
 [[#🔍 Access the Web Server]]
 
-[[#🔧 Step 2 Apache Configuration Notes]]
-
 [[#🐋 Step 1 Build & Launch Containers]]
+
+[[#🔧 Step 2 Apache Configuration Notes]]
 
 [[#📂 Directory Structure]]
 
