@@ -51,4 +51,4 @@ Clone the repo, follow the guides in `docs/`, and apply the Docker configs in `d
 
 ## 🙌 Contribution & License
 
-MIT Licensed • Built by [Your Name](https://github.com/yourusername)
+MIT Licensed • Built by [Suyash Gurav](https://github.com/guravsuyash)
