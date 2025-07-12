@@ -1,0 +1,24 @@
+# Ignore Obsidian vault configuration
+.obsidian/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Editor folders
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+
+# Node.js
+node_modules/

@@ -15,24 +15,24 @@ A complete self-hosted NAS solution built on Raspberry Pi using:
 ### 📁 Documentation
 Each setup step is documented in the [`docs/`](./docs) folder:
 
-| Step | Description |
-|------|-------------|
-| [01](./docs/01-raspbian-setup.md) | Installing Raspbian OS |
-| [02](./docs/02-omv-installation.md) | Installing OpenMediaVault |
-| [03](./docs/03-docker-portainer.md) | Docker + Portainer Setup |
-| [04](./docs/04-plex-media-server.md) | Plex Media Server Deployment |
-| [05](./docs/05-apache-web-server.md) | Apache Web Server Setup |
-| [06](./docs/06-storage-setup.md) | Mounting & Managing Storage |
-| [07](./docs/07-network-configuration.md) | Network Configuration |
+| Step                                     | Description                  |
+| ---------------------------------------- | ---------------------------- |
+| [01](./docs/01-raspbian-setup.md)        | Installing Raspbian OS       |
+| [02](./docs/02-omv-installation.md)      | Installing OpenMediaVault    |
+| [03](./docs/03-docker-portainer.md)      | Docker + Portainer Setup     |
+| [04](./docs/04-plex-media-server.md)     | Plex Media Server Deployment |
+| [05](./docs/05-apache-web-server.md)     | Apache Web Server Setup      |
+| [06](./docs/06-storage-setup.md)         | Mounting & Managing Storage  |
+| [07](./docs/07-network-configuration.md) | Network Configuration        |
 
 ---
 
 ## ⚙️ Configs & Scripts
 
-| Folder | Purpose |
-|--------|---------|
-| [`docker/`](./docker) | All Docker Compose files |
-| [`config/`](./config) | Apache and OMV settings |
+| Folder                  | Purpose                             |
+| ----------------------- | ----------------------------------- |
+| [`docker/`](./docker)   | All Docker Compose files            |
+| [`config/`](./config)   | Apache and OMV settings             |
 | [`scripts/`](./scripts) | Installation and automation scripts |
 
 ---
