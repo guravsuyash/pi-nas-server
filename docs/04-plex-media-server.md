@@ -35,7 +35,7 @@ To link your Plex server to your Plex account, retrieve a **claim token**:
 
 ## 📝 Step 4: Create the Docker Compose File
 
-Use a text editor like `nano` to create your `docker-compose-plex.yml` file:
+Use a text editor like `nano` to create your [docker-compose-plex.yml](../docker/docker-compose-plex.yml) file:
 
 ```bash
 sudo nano docker-compose-plex.yml
