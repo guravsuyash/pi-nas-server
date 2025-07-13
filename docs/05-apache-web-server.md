@@ -4,17 +4,6 @@ In this step, we configure an **Apache web server** running in Docker to act as 
 
 > 📁 The `docker-compose-apache.yml` and `Dockerfile` for this setup are already present in this folder.
 
----
-
-## 🧱 Architecture Overview
-
-[[#🔍 Access the Web Server]]
-
-[[#🐋 Step 1 Build & Launch Containers]]
-
-[[#🔧 Step 2 Apache Configuration Notes]]
-
-[[#📂 Directory Structure]]
 
 ---
 
